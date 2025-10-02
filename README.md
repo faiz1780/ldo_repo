@@ -31,4 +31,15 @@ Low Dropout Regulators are widely used because they offer:
 
 ---
 
-## 🔹 How to U
+## 🔹 How to Use
+1. Open `ldo_main.asc` in **LTspice**  
+2. Run **Transient (.tran)** or **AC (.ac) Analysis** to observe output voltage, load response, and PSRR  
+3. Modify the **error amplifier** or **compensation network** to explore performance variations  
+
+---
+
+## 🔹 Results
+- Dropout Voltage: 121 mV  
+- PSRR: -70.3 dB  
+- Simulations include transient response, load regulation, and PSRR  
+- Modular design using a custom op-amp symbol improves reusability 
