@@ -32,7 +32,7 @@ Low Dropout Regulators are widely used because they offer:
 ---
 
 ## 🔹 How to Use
-1. Open `ldo_main.asc` in **LTspice**  
+1. Open `ldo_main.asc`and include tsmc180 text file in **LTspice**  
 2. Run **Transient (.tran)** or **AC (.ac) Analysis** to observe output voltage, load response, and PSRR  
 3. Modify the **error amplifier** or **compensation network** to explore performance variations  
 
