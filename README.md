@@ -1,68 +1,34 @@
-\# \*\*1. Overview\*\*
+# LTspice LDO Design (TSMC 180nm)
 
-This project contains a \*\*Low Dropout Regulator (LDO)\*\* designed in \*\*TSMC 180nm technology\*\* using \*\*LTspice\*\*. LDOs provide a stable output voltage with minimal ripple, making them essential for sensitive analog and digital circuits.
-
-
-
----
-
-
-
-\# \*\*2. Design Highlights\*\*
-
-
-
-\*\*2.1 Error Amplifier\*\*
-
-\- Single-stage op-amp design.
-
-\- Saved as a \*\*symbol\*\* for modular use in the LDO.
-
-
-
-\*\*2.2 LDO Schematic\*\*
-
-\- Includes pass transistor, reference voltage, feedback network, and compensation elements.
-
-
+This repository contains the design and LTspice simulation of a **Low Dropout Regulator (LDO)** implemented in **TSMC 180nm technology**.  
+The LDO provides a stable output voltage with minimal ripple, suitable for sensitive analog and digital circuits.
 
 ---
 
-
-
-\# \*\*3. Key Results\*\*
-
-\- \*\*Dropout Voltage:\*\* 121 mV
-
-\- \*\*PSRR:\*\* -70.3 dB
-
-\- \*\*Simulations:\*\* Transient response, load regulation, and PSRR
-
-
+## 🔹 Project Specifications
+- **Technology:** TSMC 180nm CMOS  
+- **Architecture:** LDO with single-stage error amplifier and pass transistor  
+- **Key Results:**
+  - Dropout Voltage: 121 mV  
+  - PSRR: -70.3 dB  
 
 ---
 
-
-
-\# \*\*4. How to Use\*\*
-
-1\. Open `ldo\_main.asc` in \*\*LTspice\*\*.
-
-2\. Run `.tran` or `.ac` simulations to observe output voltage, load step response, and PSRR.
-
-3\. Modify the \*\*error amplifier\*\* or \*\*compensation network\*\* to explore performance variations.
-
-
+## 🔹 Why LDOs?
+Low Dropout Regulators are widely used because they offer:  
+- Stable output voltage with low ripple  
+- High Power Supply Rejection Ratio (PSRR)  
+- Low dropout for efficient voltage regulation  
+- Simple and modular design for reuse  
 
 ---
 
+## 🔹 Repository Contents
+- `ldo_main.asc` → Full LDO schematic in LTspice  
+- `erroramp.asc` → Single-stage op-amp used as the error amplifier  
+- `.gitignore` → Ignores LTspice simulation files (`.raw`, `.log`, `.bak`, `.tmp`)  
+- `README.md` → Project documentation  
 
+---
 
-\# \*\*5. Notes\*\*
-
-\- Modular design using a \*\*custom op-amp symbol\*\* improves reusability.
-
-\- Achieved \*\*low dropout\*\* and \*\*high PSRR\*\*, demonstrating effective voltage regulation.
-
-
-
+## 🔹 How to U
